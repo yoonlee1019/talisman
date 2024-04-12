@@ -1,0 +1,187 @@
+@charset "utf-8";
+
+.content{
+    position: relative;
+}
+.category{
+    padding: 28px 32px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    border-bottom: 5px solid #FF5656;
+}
+.category li{
+    width: 168px;
+    height: 112px;
+    line-height: 102px;
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    background-color: #fff;
+    border: 5px solid #FF5656;
+    border-radius: 92px;
+    -webkit-border-radius: 92px;
+    -moz-border-radius: 92px;
+    -ms-border-radius: 92px;
+    -o-border-radius: 92px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.category li.on{
+    color: #FFF617;
+    background-color: #FF5656;
+}
+
+.info{
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 60px;
+}
+.option{
+    height: calc(100% - 313px);
+}
+.option li{
+    height: 100%;
+}
+.option>li{
+    display: none;
+}
+.option>li ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+.option>li ul li{
+    width: calc(50% - 2.5px);
+    height: 50%;
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    position: relative;
+    background-image: url(/images/arrow.png);
+    background-repeat: no-repeat;
+    background-position: center 68%;
+}
+.option>li ul li:first-child, .option>li ul li:nth-child(2){
+    border-bottom: 5px solid #FF5656;
+}
+.option>li ul li:nth-of-type(odd){
+    border-right: 5px solid #FF5656;
+}
+.option>li ul li.on{
+    background-color: #FF5656;
+}
+
+.option>li ul li p{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+}
+.option>li ul li p.sub{
+    font-weight: 700;
+    color: #FFF617;
+    line-height: 1.25;
+    top: 20%;
+    display: none;
+}
+.option>li ul li span.btn-add{
+    display: inline-block;
+    width: 168px;
+    height: 100px;
+    line-height: 100px;
+    color: #FF5656;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 92px;
+    -webkit-border-radius: 92px;
+    -moz-border-radius: 92px;
+    -ms-border-radius: 92px;
+    -o-border-radius: 92px;
+    position: absolute;
+    left: 50%;
+    bottom: 12%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    cursor: pointer;
+    display: none;
+}
+.option>li ul li span.done{
+    color: #FF5656;
+    background-color: #FFF617;
+}
+
+.cart{
+    width: 100%;
+    height: 140px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    position: absolute;
+    bottom: 0;
+}
+.cart .add-list{
+    width: calc(100% - 300px);
+    height: 140px;
+    border-top: 5px solid #FF5656;
+    padding: 20px 28px 20px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:flex-start;
+}
+.cart .add-list li{
+    width: 100px;
+    height: 100px;
+    line-height: 90px;
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    background-color: #fff;
+    border: 5px solid #FF5656;
+    box-sizing: border-box;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    position: relative;
+    margin-right: 28px;
+}
+.cart .add-list li:last-child{
+    margin-right: 0;
+}
+.cart .add-list li .btn-delete{
+    width: 40px;
+    height: 40px;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #fff;
+    border: 5px solid #FF5656;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    position: absolute;
+    top:-10px
+}
+.cart .btn-order{
+    width: 300px;
+    height: 140px;
+    line-height: 140px;
+    font-size: 40px;
+    font-weight: 900;
+    text-align: center;
+    background-color: #FF5656;
+    color: #FFF617;
+    cursor: pointer;
+}
